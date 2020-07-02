@@ -1,0 +1,31 @@
+.contact {
+    background-color: #fffaeb;
+}
+
+.contact p {
+    text-align: center;
+}
+
+.contact a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .contact p {
+        font-size: .9rem;
+    }
+    .contact .social-icon {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    .contact p {
+        font-size: .7rem;
+    }
+    .contact .social-icon {
+        font-size: .9rem;
+    }
+}

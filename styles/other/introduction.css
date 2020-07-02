@@ -1,0 +1,19 @@
+.introduction {
+    background-color: var(--lightyellow-bacground-color);
+}
+
+.introduction-center {
+    min-height: calc(100vh - 15rem);
+    display: grid;
+    place-items: center;
+}
+
+.introduction h4 {
+    color: var(--lightblue-text);
+}
+
+@media screen and (min-width: 992px) {
+    .introduction-center {
+        grid-template-columns: 1fr;
+    }
+}

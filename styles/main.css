@@ -1,0 +1,171 @@
+/*
+Fonts - Roboto & Montserrat Alternates
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Roboto&display=swap');
+
+/*
+Imported other styles
+*/
+@import "./other/header.css";
+@import "./other/introduction.css";
+@import "./other/projects.css";
+@import "./other/contact.css";
+
+/*
+Main styles
+*/
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*Fonts*/
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Montserrat Alternates', sans-serif;
+    /*Colors*/
+    --darkblue-text: #102a42; /*Text color*/
+    --lightblue-text: #617d98; /*Subtitled text*/
+    --yellow-highlight-color: #e9b949; /*highlighted*/
+    --lightyellow-bacground-color: #fffaeb; /*bacground color*/
+    --dark-yellow-button-text: #513c06;
+    --very-lightyellow: #f9da8b; /*button hover*/
+    /*Border radius*/
+    --radius: .25rem;
+    /*Transition*/
+    --transition: all 300ms ease-in-out;
+    /*Line height*/
+    --line-height: 1.5;
+    /*Letter spacing*/
+    --letter-spacing: 0.25rem;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    color: var(--darkblue-text);
+    font-size: .9rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--main-font);
+    letter-spacing: var(--letter-spacing);
+    margin-bottom: .75rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 0.85rem;
+}
+
+p {
+    margin-bottom: 1.25rem;
+    color: var(--lightblue-text);
+}
+
+@media screen and (min-width: 800px) {
+
+    body {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        line-height: 1;
+    }
+}
+
+.button {
+    text-transform: uppercase;
+    background-color: var(--yellow-highlight-color);
+    color: var(--dark-yellow-button-text);
+    padding: 0.375rem 0.75rem;
+    letter-spacing: var(--letter-spacing);
+    display: inline-block;
+    font-weight: 700;
+    transition: var(--transition);
+    font-size: 0.875rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+    border-radius: var(--radius);
+}
+
+.button:hover {
+    background-color: var(--very-lightyellow);
+}
+
+section {
+    padding: 5rem 0;
+}
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.section-title {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.line {
+    margin: 0 auto 5%;
+    height: 5px;
+    width: 10%;
+    background-color: var(--yellow-highlight-color);
+}
